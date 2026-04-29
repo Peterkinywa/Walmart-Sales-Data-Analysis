@@ -18,47 +18,47 @@ This is an end-to-end data analysis project designed to extract critical busines
    - **Dataset Link**: [Walmart Sales Dataset](https://www.kaggle.com/najir0123/walmart-10k-sales-datasets)
 
 ### 4. Install Required Libraries and Load Data
-   - **Libraries**: Install necessary Python libraries using:
-     ```bash
-     pip install pandas numpy sqlalchemy mysql-connector-python psycopg2
-     ```
-   - **Loading Data**: Read the data into a Pandas DataFrame.
-	```python
-		#Importing the dataset
+- **Libraries**: Install necessary Python libraries using:
+```bash
+pip install pandas numpy sqlalchemy mysql-connector-python psycopg2
+```
+- **Loading Data**: Read the data into a Pandas DataFrame.
+```python
+#Importing the dataset
 
-		df = pd.read_csv('Walmart.csv', encoding_errors='ignore')
-	```
+df = pd.read_csv('Walmart.csv', encoding_errors='ignore')
+```
 	
 ### 5. Explore the Data
-   - **Exploration**: Use functions like `.info()`, `.describe()`, and `.head()` to get a quick overview of the data structure and statistics.
+- **Exploration**: Use functions like `.info()`, `.describe()`, and `.head()` to get a quick overview of the data structure and statistics.
 
 ### 6. Data Cleaning
-   - **Remove Duplicates**: Identify and remove duplicate entries.
-	```Python
-		#Checking for duplicates
+- **Remove Duplicates**: Identify and remove duplicate entries.
+```Python
+#Checking for duplicates
 
-		df.duplicated().sum() 
-	```
+df.duplicated().sum() 
+```
 	
-	```Python
-		#Removing duplicates from the dataset
+```Python
+#Removing duplicates from the dataset
 	
-		df.drop_duplicates(inplace=True) 
+df.drop_duplicates(inplace=True) 
 
-		#Checking for duplicates
+#Checking for duplicates
 	
-		df.duplicated().sum() 
-	```
-   - **Handle Missing Values**: Drop rows or columns with missing values if they are insignificant; fill values where essential.
-	```Python
-		#Dropping rows with null values
+df.duplicated().sum() 
+```
+- **Handle Missing Values**: Drop rows or columns with missing values if they are insignificant; fill values where essential.
+```Python
+#Dropping rows with null values
 	
-		df.dropna(inplace=True) 
+df.dropna(inplace=True) 
 
-		#Checking for null values after dropping rows with null values
+#Checking for null values after dropping rows with null values
 	
-		df.isnull().sum()
-	```
+df.isnull().sum()
+```
    - **Fix Data Types**: Ensure all columns have consistent data types (e.g., dates as `datetime`, prices as `float`).
 	```Python
 		#Removing the dollar sign from the unit_price column and converting it to float
