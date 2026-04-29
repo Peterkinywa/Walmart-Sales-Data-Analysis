@@ -4,18 +4,18 @@ This is an end-to-end data analysis project designed to extract critical busines
 ## Project Steps
 
 ### 1. Set Up the Environment
-   - **Tools Used**: VS Code, Python, PostgreSQL
-   - **Goal**: Create an isolated virtual workspace where you will run your project.
+- **Tools Used**: VS Code, Python, PostgreSQL
+- **Goal**: Create an isolated virtual workspace where you will run your project.
 
 ### 2. Set Up Kaggle API
-   - **API Setup**: Obtain your Kaggle Legacy API credentials from [Kaggle](https://www.kaggle.com/) by navigating to your profile settings and downloading the JSON file.
-   - **Configure Kaggle**: 
-      - Place the downloaded `kaggle.json` file in your local `.kaggle` folder.
-      - Use the command `kaggle datasets download -d <najir0123/walmart-10k-sales-datasets>` to pull datasets directly into your project.
+- **API Setup**: Obtain your Kaggle Legacy API credentials from [Kaggle](https://www.kaggle.com/) by navigating to your profile settings and downloading the JSON file.
+- **Configure Kaggle**: 
+   - Place the downloaded `kaggle.json` file in your local `.kaggle` folder.
+   - Use the command `kaggle datasets download -d <najir0123/walmart-10k-sales-datasets>` to pull datasets directly into your project.
 
 ### 3. Download Walmart Sales Data
-   - **Data Source**: Use the Kaggle API to download the Walmart sales datasets from Kaggle.
-   - **Dataset Link**: [Walmart Sales Dataset](https://www.kaggle.com/najir0123/walmart-10k-sales-datasets)
+- **Data Source**: Use the Kaggle API to download the Walmart sales datasets from Kaggle.
+- **Dataset Link**: [Walmart Sales Dataset](https://www.kaggle.com/najir0123/walmart-10k-sales-datasets)
 
 ### 4. Install Required Libraries and Load Data
 - **Libraries**: Install necessary Python libraries using:
@@ -105,7 +105,7 @@ if engine_psql:
 else:
 	print("Failed to export data to PostgreSQL database.")
 ```
-   - **Verification**: Run initial SQL queries to confirm that the data has been loaded accurately.
+- **Verification**: Run initial SQL queries to confirm that the data has been loaded accurately.
 ```SQL
 SELECT * from walmart_sales
 ```
@@ -181,7 +181,6 @@ pip install -r requirements.txt
 ```
 3. Set up your Kaggle API, download the data, load and analyze.
 
----	 
 ## Author
 Peter Kinywa Mutua, Data Analyst
 
