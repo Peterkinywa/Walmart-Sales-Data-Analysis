@@ -107,7 +107,7 @@ else:
 ```
    - **Verification**: Run initial SQL queries to confirm that the data has been loaded accurately.
 ```SQL
-	SELECT * from walmart_sales
+SELECT * from walmart_sales
 ```
 
 ### 9. SQL Analysis: Complex Queries and Business Problem Solving
@@ -160,7 +160,7 @@ WITH most_common_payment_method
 SELECT *
 FROM most_common_payment_method 
 WHERE rank = 1
-	```   
+```   
 ## Requirements
 
 - **Python 3.8+**
@@ -172,13 +172,13 @@ WHERE rank = 1
 ## Getting Started
 
 1. Clone the repository:
-   ```bash
-	git clone https://github.com/Peterkinywa/Walmart-Sales-Data-Analysis.git
-   ```
+```bash
+git clone https://github.com/Peterkinywa/Walmart-Sales-Data-Analysis.git
+```
 2. Install Python libraries:
-   ```bash
-	pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 3. Set up your Kaggle API, download the data, load and analyze.
 
 ---	 
