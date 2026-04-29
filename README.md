@@ -111,7 +111,7 @@ This is an end-to-end data analysis project designed to extract critical busines
 ### 9. SQL Analysis: Complex Queries and Business Problem Solving
    - **Business Problem-Solving**:
      - Identify the highest-rated category in each branch, displaying the branch, category, AVG RATING.
-	 ```SQL
+	```SQL
 	WITH ranked_data AS (
     SELECT 
         ws."Branch", 
@@ -127,9 +127,9 @@ This is an end-to-end data analysis project designed to extract critical busines
 	SELECT *
 	FROM ranked_data
 	WHERE rank = 1
-	 ```
+	```
      - Identify the busiest day for each branch based on the number of transactions.
-	 ```SQL
+	```SQL
 	SELECT * 
 	FROM
 		(SELECT 
@@ -141,9 +141,10 @@ This is an end-to-end data analysis project designed to extract critical busines
 	GROUP BY 1, 2
 	)
 	WHERE rank = 1
-	 ```	
+	```	
+	
      - Determine the most common payment method for each Branch. Display Branch and the preferred_payment_method..
-	 ```SQL
+	```SQL
 	WITH most_common_payment_method 
 	AS
 	(SELECT 
@@ -157,7 +158,7 @@ This is an end-to-end data analysis project designed to extract critical busines
 	SELECT *
 	FROM most_common_payment_method 
 	WHERE rank = 1
-	 ```   
+	```   
 ## Requirements
 
 - **Python 3.8+**
